@@ -1,0 +1,14 @@
+{
+  "name": "ddos-nyo-nga",
+  "version": "1.0.0",
+  "description": "A resilient website setup to withstand DDoS attacks",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "http-proxy-middleware": "^1.0.6"
+  }
+}

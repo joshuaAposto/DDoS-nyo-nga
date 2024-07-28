@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS nyo Nga</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: black;
+            color: #00ff00;
+            font-family: 'Press Start 2P', cursive;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+        h1 {
+            color: #00ff00;
+            animation: flicker 1.5s infinite alternate;
+        }
+        p {
+            color: #00ff00;
+        }
+        @keyframes flicker {
+            0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+                opacity: .99;
+                text-shadow: -0.1px -0.1px 2px #fff, 0.1px 0.1px 2px #fff, 0 0 2px #fff, 0 0 2px #ff00ff, 0 0 4px #00ff00, 0 0 4px #00ff00, 0 0 4px #00ff00, 0 0 4px #00ff00, 0 0 4px #00ff00;
+            }
+            20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+                opacity: 0.4;
+                text-shadow: none;
+            }
+        }
+        @keyframes glitch {
+            0% {
+                transform: translate(0);
+            }
+            20% {
+                transform: translate(-2px, 2px);
+            }
+            40% {
+                transform: translate(-2px, -2px);
+            }
+            60% {
+                transform: translate(2px, 2px);
+            }
+            80% {
+                transform: translate(2px, -2px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+        h1, p {
+            animation: glitch 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DDoS nyo Nga</h1>
+    </div>
+</body>
+</html>
